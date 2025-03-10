@@ -5,6 +5,14 @@ public abstract class RecursoDigital {
     protected int anioPublicacion;
     protected boolean disponible;
 
+
+    public RecursoDigital(String autor, String titulo, int anioPublicacion, boolean disponible){
+        this.autor = autor;
+        this.titulo = titulo;
+        this.anioPublicacion = anioPublicacion;
+        this.disponible = disponible;
+    }
+
     public RecursoDigital(String autor, String titulo, int anioPublicacion) {
 
         this.autor = autor;
@@ -13,6 +21,7 @@ public abstract class RecursoDigital {
         this.disponible = true;
 
     }
+
 
 
     public abstract boolean prestar();
