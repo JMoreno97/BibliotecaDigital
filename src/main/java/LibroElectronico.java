@@ -28,13 +28,12 @@ public class LibroElectronico extends RecursoDigital {
     }
 
     @Override
-    public boolean devolver() {
+    public void devolver() {
         if (disponible == false) {
             System.out.println("El libro ha sido devuelto");
             disponible = true;
         } else {
             System.out.println("El libro ya ha sido devuelto");
         }
-        return disponible;
     }
 }
