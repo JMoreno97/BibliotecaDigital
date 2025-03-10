@@ -1,46 +1,41 @@
-import java.util.*;
-
 public class Usuario {
-    protected String nombre;
-    protected String correoElectronico;
-    protected String idUsuario;
-    private List<RecursoDigital> prestamos = new ArrayList<>();
 
-    public Usuario(String nombre, String correoElectronico, String idUsuario) {
-        this.nombre = nombre;
-        this.correoElectronico = correoElectronico;
-        this.idUsuario = idUsuario;
-    }
+    private String nombre;
+    private String correoElectronico;
+    private String idUsuario;
+    private List<Prestamo> prestamos = new ArrayList<>();
 
-    public boolean registrarse(){
-        return true;
-    }
-
-    public List<RecursoDigital> consultarPrestamos(){
-        return prestamos;
-    }
-
-    public String getCorreoElectronico() {
-        return correoElectronico;
-    }
-
+    
     public String getNombre() {
         return nombre;
     }
-
-    public String getIdUsuario() {
-        return idUsuario;
-    }
-
-    public void setCorreoElectronico(String correoElectronico) {
-        this.correoElectronico = correoElectronico;
-    }
-
-    public void setIdUsuario(String idUsuario) {
-        this.idUsuario = idUsuario;
-    }
-
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+    public String getCorreoElectronico() {
+        return correoElectronico;
+    }
+    public void setCorreoElectronico(String correoElectronico) {
+        this.correoElectronico = correoElectronico;
+    }
+    public String getIdUsuario() {
+        return idUsuario;
+    }
+  
+  
+    public void setIdUsuario(String idUsuario) {
+        this.idUsuario = idUsuario;
+    }
+  
+      public boolean registrarse(){
+        return true;
+    }
+  
+    //TODO: Mala implementación
+      public List<RecursoDigital> consultarPrestamos(){
+        return prestamos;
+    }
+
 }
+
+
